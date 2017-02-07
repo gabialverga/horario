@@ -15,7 +15,7 @@
       {% for linha in turma.linhas %}
          <td>{{horario}}</td>
         {% for aula in turma.linhas.aulas %}
-          <td>{{disciplina}} /r {{professor}}</td> 
+          <td>{{aula.disciplina}} /r {{aula.professor}}</td> 
         {%endfor%}
       {%endfor%}
        </tr>
@@ -23,4 +23,4 @@
   {% endfor %}
 {% endfor %}
 
-teste pra ver se aparce 5
+teste pra ver se aparce 7
