@@ -6,9 +6,15 @@
   {% for turma in curso.turmas %}
     <h2> {{turma.nome}} </h2>
        <table>
-          <tr>
+       <tr>
       {% for coluna in turma.colunas %}
             <td>{{coluna}}</td>   
+      {%endfor%}
+       </tr>
+       <tr>
+         <td>{{horario}}</td>
+      {% for aula in turma.linhas.aulas %}
+               <td>{{aula.disciplina}}</td>
       {%endfor%}
        </tr>
        </table>
