@@ -7,5 +7,8 @@
   <h1> {{curso.nome}} </h1>
   {% for turma in curso.turmas %}
     <h2> {{turma.nome}} </h2>
+      {% for turma.colunas %}
+        <h1> {{coluna.nome}} </h1>
+      {%endfor%}
   {% endfor %}
 {% endfor %}
