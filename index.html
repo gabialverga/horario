@@ -11,6 +11,11 @@
             <th>{{coluna}}</th>   
       {%endfor%}
        </tr>
+       <tr>
+      {% for linha in turma.linhas %}
+            <td>{{horario}}</td>   
+      {%endfor%}
+       </tr>
        </table>
   {% endfor %}
 {% endfor %}
