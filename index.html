@@ -3,3 +3,16 @@
 
 site.data.horarios
 
+<h1>Hello</h1>
+
+<table>
+  {% for row in page.data %}
+    <tr>
+    {% for item in row %}
+      <td>
+        {{ item }}
+      </td>
+    {% endfor %}
+    </tr>
+  {% endfor %}
+</table>
