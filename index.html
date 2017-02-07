@@ -13,7 +13,10 @@
        </tr>
        <tr>
       {% for linha in turma.linhas %}
-            <td>{{horario}}</td>   
+         <td>{{horario}}</td>
+        {% for aula in turma.linhas.aulas %}
+          <td>{{disciplina}} /r {{professor}}</td> 
+        {%endfor%}
       {%endfor%}
        </tr>
        </table>
