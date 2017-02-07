@@ -6,7 +6,11 @@
   {% for turma in curso.turmas %}
     <h2> {{turma.nome}} </h2>
       {% for coluna in turma.colunas %}
-        <h1> {{coluna}} </h1>
+        <table>
+          <tr>
+            <th>{{coluna}}</th>
+          </tr>
+        </table>
       {%endfor%}
   {% endfor %}
 {% endfor %}
