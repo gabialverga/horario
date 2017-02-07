@@ -9,15 +9,15 @@
        <tr>
       {% for coluna in turma.colunas %}
             <th>{{coluna}}</th>   
-      {%endfor%}
+      {% endfor %}
        </tr>
        <tr>
       {% for linha in turma.linhas %}
-         <td>{{horario}}</td>
-        {% for aula in turma.linhas.aulas %}
-          <td>{{aula.disciplina}} /r {{aula.professor}}</td> 
-        {%endfor%}
-      {%endfor%}
+         <td>{{linha.horario}}</td>
+        {% for aula in linha %}
+          <td>{{aula.disciplina}} <br/> {{aula.professor}}</td> 
+        {% endfor %}
+      {% endfor %}
        </tr>
        </table>
   {% endfor %}
