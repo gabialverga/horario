@@ -5,10 +5,10 @@ teste 01
 <nav>
 <ul>
 {% for curso in site.data.horarios.cursos %}
-  <li> <a href="#"{{curso.nome}}>{{curso.nome}} </a></li>
+  <li>{{curso.nome}} </li>
     <ul>
   {% for turma in curso.turmas %}
-    <li> {{turma.nome}} </li>
+    <li> <a href="#"{{curso.turma.nome}}>{{turma.nome}} </a></li>
   {% endfor %}
       </ul>
 {% endfor %}
@@ -17,9 +17,9 @@ teste 01
 
 
 {% for curso in site.data.horarios.cursos %}
-  <h1><a name={{curso.nome}> {{curso.nome} </a></h1>
+  <h1> {{curso.nome}</h1>
   {% for turma in curso.turmas %}
-    <h2> {{turma.nome}} </h2>
+    <h2> <a name={{curso.turma.nome}>{{turma.nome}}  </a></h2>
        <table>
        <tr>
       {% for coluna in turma.colunas %}
