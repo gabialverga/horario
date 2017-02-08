@@ -5,7 +5,7 @@ teste 01
 <nav>
 <ul>
 {% for curso in site.data.horarios.cursos %}
-  <li id={{curso.nome}}> {{curso.nome}} </li>
+  <li> <a href=#{{curso.nome}}>{{curso.nome}} </a></li>
     <ul>
   {% for turma in curso.turmas %}
     <li> {{turma.nome}} </li>
@@ -17,7 +17,7 @@ teste 01
 
 
 {% for curso in site.data.horarios.cursos %}
-  <h1><a href="#"{{curso.nome}}>{{curso.nome} </a> </h1>
+  <h1><a name={{curso.nome}> {{curso.nome} </a></h1>
   {% for turma in curso.turmas %}
     <h2> {{turma.nome}} </h2>
        <table>
