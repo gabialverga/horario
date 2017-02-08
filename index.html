@@ -3,18 +3,19 @@
 <link type="text/css" rel="stylesheet" href="colorido.css"/>
 
 <nav>
-	<ul>
+<ul>
 {% for curso in site.data.horarios.cursos %}
-  <li>{{curso.nome}} </li>
+  <li> {{curso.nome}} </li>
     <ul>
   {% for turma in curso.turmas %}
-    <li>{{turma.nome}} </li>
+    <li> {{turma.nome}} </li>
   {% endfor %}
       </ul>
 {% endfor %}
-	</ul>
-  
+</ul>
 </nav>
+
+
 {% for curso in site.data.horarios.cursos %}
   <h1> {{curso.nome}} </h1>
   {% for turma in curso.turmas %}
