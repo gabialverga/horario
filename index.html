@@ -5,7 +5,7 @@
 <nav>
 <ul>
 {% for curso in site.data.horarios.cursos %}
-  <li> {{curso.nome}} </li>
+  <li id={{curso.nome}}> {{curso.nome}} </li>
     <ul>
   {% for turma in curso.turmas %}
     <li> {{turma.nome}} </li>
@@ -17,7 +17,7 @@
 
 
 {% for curso in site.data.horarios.cursos %}
-  <h1> {{curso.nome}} </h1>
+  <h1><a href=#{{curso.nome}}>{{curso.nome} </a> </h1>
   {% for turma in curso.turmas %}
     <h2> {{turma.nome}} </h2>
        <table>
