@@ -17,11 +17,15 @@ h3, h2, h1{
 th {
     background-color: #228B22;
     color: #D3D3D3;
-}
-th, td {
     border-bottom: 1px solid #ddd;
     padding: 15px;
     text-align: center;
+}
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background-color: #F0FFFF;
 }
 
 li, h4, h5, a{
@@ -35,79 +39,6 @@ body {
   background-color: #708090;
 }
 
-.page-header {
-  margin-top: 30px;
-}
-
-.content h2:first-of-type {
-  margin-top: 0px;
-}
-
-.half-rule {
-  width: 100px;
-  margin: 25px auto;
-}
-
-
-.fa {
-  margin-right: 0.5em;
-}
-
-.checklist {
-  padding: 0;
-  list-style: none;
-}
-
-/* footer */
-
-.footer {
-  margin-top: 30px;
-  padding-top: 16px;
-  color: #777;
-  border-top: 1px solid #eee;
-  font-size: 90%;
-  text-align: center;
-}
-
-.footer p {
-  margin: 0px;
-}
-
-/* toc */
-
-.sidebar {
-  font-size: 90%;
-  line-height: normal;
-}
-
-.toc ul  {
-  padding-left: 0;
-  list-style: none;
-}
-
-.toc ul li {
-  padding-top: 3px;
-}
-
-.toc ul ul {
-  padding-left: 10px;
-  font-size: 95%;
-}
-
-/* heading scrolling */
-
-h2[id]:before,
-h3[id]:before{
-  content: "";
-  display: block;
-  height: 70px;
-  margin-top:-70px;
-}
-
-/* affix hacks from boostrap 3.0 docs */
-.sidebar.affix {
-    position: static;
-}
 
 @media (min-width: 992px) {
   /* Widen the fixed sidebar */
