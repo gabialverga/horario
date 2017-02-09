@@ -2,7 +2,7 @@
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-h4{
+h3, h2, h1{
   font-style: bold;
 }
 
@@ -19,10 +19,6 @@ body {
 
 .page-header {
   margin-top: 30px;
-}
-
-.breadcrumb {
-  margin-top: 20px;
 }
 
 .content h2:first-of-type {
@@ -109,11 +105,4 @@ h3[id]:before{
     position: absolute; /* Undo the static from mobile first approach */
   }
 }
-
-@media (min-width: 1200px) {
-  /* Widen the fixed sidebar again */
-  .sidebar.affix,
-  .sidebar.affix-bottom {
-    width: 263px;
-  }
 }
