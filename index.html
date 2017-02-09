@@ -1,12 +1,13 @@
 --- 
 ---
+<link rel="shortcut icon" href="ifpb.ico" >
 <link type="text/css" rel="stylesheet" href="colorido.css"/>
 <div> 
   <img src = http://www.ifpb.edu.br/imagens/logotipos/ifpb-1>
   <a><p> - </p> HORÁRIOS LETIVOS DO CAMPUS GUARABIRA </a> 
 
 </div>
-<nav> 
+<nav>
 <ul>
 {% for curso in site.data.horarios.cursos %}
   <li>{{curso.nome}} </li>
