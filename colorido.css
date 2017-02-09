@@ -11,10 +11,10 @@ div {
   position: static;
   top:10%;
   left:50%;
-  width: 1000px;
   height: 800px;
   text-align:center;
   margin: 25px;
+  max-width: 100%;
 }
 
 img {
