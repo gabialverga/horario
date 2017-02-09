@@ -3,14 +3,13 @@
 <link type="text/css" rel="stylesheet" href="colorido.css"/>
 <div> HORÁRIOS DO CAMPUS GUARABIRA </div>
 
-teste 38457
 <nav> 
 <ul>
 {% for curso in site.data.horarios.cursos %}
   <li>{{curso.nome}} </li>
     <ul>
   {% for turma in curso.turmas %}
-    <li> <a href="#"{{turma.nome}}>{{turma.nome}} </a></li>
+    <li> <a href=#{{turma.nome}}>{{turma.nome}} </a></li>
   {% endfor %}
       </ul>
 {% endfor %}
