@@ -16,8 +16,8 @@ h3, h2, h1{
   font-style: bold;
 }
 th {
-    background-color: #228B22;
-    color: #D3D3D3;
+    background-color: #32CD32;
+    color: #FFFFFF;
     border-bottom: 1px solid #ddd;
     padding: 15px;
     text-align: center;
@@ -26,7 +26,6 @@ td {
     border-bottom: 1px solid #ddd;
     padding: 15px;
     text-align: center;
-    background-color: #F0FFFF;
 }
 
 li, h4, h5, a{
