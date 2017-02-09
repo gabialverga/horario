@@ -9,7 +9,7 @@
   <li>{{curso.nome}} </li>
     <ul>
   {% for turma in curso.turmas %}
-    <li> <a href="#"+{{turma.nome}}>{{turma.nome}} </a></li>
+    <li> <a href='<%#String.Concat("#",{{turma.nome}})%>'>{{turma.nome}} </a></li>
   {% endfor %}
       </ul>
 {% endfor %}
