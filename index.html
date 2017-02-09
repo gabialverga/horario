@@ -7,18 +7,18 @@
   <a><p> - </p> HORÁRIOS LETIVOS DO CAMPUS GUARABIRA </a> 
 
 </div>
-<nav>
-<ul>
+<table>
+  <tr>
 {% for curso in site.data.horarios.cursos %}
-  <li>{{curso.nome}} </li>
-    <ul>
+  <th>{{curso.nome}} </th>
+    <tr>
   {% for turma in curso.turmas %}
-    <li> <a href=#{{turma.nome | remove: " "}}>{{turma.nome}}</a></li>
+    <td> <a href=#{{turma.nome | remove: " "}}>{{turma.nome}}</a></td>
   {% endfor %}
-      </ul>
+      </tr>
 {% endfor %}
-</ul>
-</nav>
+    </tr>
+</table>
 
 
 {% for curso in site.data.horarios.cursos %}
