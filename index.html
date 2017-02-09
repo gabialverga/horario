@@ -9,7 +9,7 @@
   <li>{{curso.nome}} </li>
     <ul>
   {% for turma in curso.turmas %}
-    <li> <a href=#{{turma.nome}}>{{turma.nome}}</a></li>
+    <li> <a href=#{{turma.nome | remove: " "}}>{{turma.nome}}</a></li>
   {% endfor %}
       </ul>
 {% endfor %}
@@ -20,7 +20,7 @@
 {% for curso in site.data.horarios.cursos %}
   <h1> {{curso.nome}}</h1>
   {% for turma in curso.turmas %}
-    <h2> <a id={{turma.nome}}>{{turma.nome}}  </a></h2>
+    <h2> <a id={{turma.nome | remove: " "}>{{turma.nome}}  </a></h2>
        <table>
        <tr>
       {% for coluna in turma.colunas %}
