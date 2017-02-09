@@ -16,7 +16,7 @@ div {
   text-align:center;
   margin: 25px;
 }
-nav {
+ul, li{
   text-align: center;
 }
 a{
