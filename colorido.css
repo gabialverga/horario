@@ -16,7 +16,9 @@ div {
   text-align:center;
   margin: 25px;
 }
-
+nav {
+  text-align: center;
+}
 a{
    text-align: center;
 }
