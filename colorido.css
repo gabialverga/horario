@@ -4,15 +4,14 @@
 div {
   background: linear-gradient(45deg, rgba(255,184,115,0.65) 0%,rgba(255,124,189,0.65) 50%,rgba(108,0,153,0.65) 100%);
   border-radius: 2px;
-  padding: 25px;
   font-size: 18px;
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
   position: static;
-  top:50%;
+  top:10%;
   left:50%;
-  width: 200px;
+  width: 500px;
   height: 800px;
   text-align:center;
   margin: 25px;
