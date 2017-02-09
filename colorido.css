@@ -13,6 +13,9 @@ div {
   text-transform: uppercase;
   -webkit-transition: box-shadow 1s ease;
   transition: box-shadow 1s ease;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
 h3, h2, h1{
