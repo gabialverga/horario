@@ -10,10 +10,10 @@
 <table>
   <tr>
 {% for curso in site.data.horarios.cursos %}
-  <th>{{curso.nome}} </th>
+  <td>{{curso.nome}} </td>
     <tr>
   {% for turma in curso.turmas %}
-    <td> <a href=#{{turma.nome | remove: " "}}>{{turma.nome}}</a></td>
+    <th> <a href=#{{turma.nome | remove: " "}}>{{turma.nome}}</a></th>
   {% endfor %}
       </tr>
 {% endfor %}
