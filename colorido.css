@@ -33,9 +33,6 @@ td {
     text-align: center;
     border-style: double
 }
-li{
-  float: left;
-}
 li, h4, h5, a{
   color: #74224C; 
 }
