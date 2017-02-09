@@ -1,6 +1,11 @@
 *{
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+div {
+  background-color: #87CEEB;
+  position: static;
+  border: 3px solid #D8BFD8;
+}
 
 h3, h2, h1{
   font-style: bold;
