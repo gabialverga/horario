@@ -14,16 +14,6 @@ div {
   max-width: 100%;
 }
 
-img {
-position: absolute;
-top: 50%;
-left: 50%;
-width: 500px;
-height: 500px;
-margin-top: -250px; /* Half the height */
-margin-left: -250px; /* Half the width */
-}
-
 a{
    text-align: center;
 }
