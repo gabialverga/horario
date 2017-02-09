@@ -31,10 +31,12 @@
       {% for linha in turma.linhas %}
          <tr>
          <td>{{linha.horario}}</td>
-         {% if {{linha.horario}} == "9:30" %}
+         {% if {{linha.horario}} == "9:30" or {{linha.horario}} == "14:40" or {{linha.horario}} =="20:30" %}
            <td colspan="5">Intervalo</td>
          {% elsif {{linha.horario}} == "12:20" %}
            <td colspan="5">Almoço</td>
+         {% elsif {{linha.horario}} == "17:30" %}
+           <td colspan="5">Jantar</td>
          {% else %}
             {% for aula in linha.aulas %}
               <td>{{aula.disciplina}} <br/> {{aula.professor}}</td> 
