@@ -1,15 +1,18 @@
 *{
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-div {
-  background-color: #87CEEB;
-  position: static;
-  border: 3px solid #D8BFD8;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
-  text-align: center;
+.btn {
+	background: linear-gradient(45deg, rgba(255,184,115,0.65) 0%,rgba(255,124,189,0.65) 50%,rgba(108,0,153,0.65) 100%);
+	border-radius: 2px;
+	box-shadow: 0px 2px 4px rgba(34,62,66,.25);
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 16px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: box-shadow 1s ease;
+	transition: box-shadow 1s ease;
 }
 
 h3, h2, h1{
