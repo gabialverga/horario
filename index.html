@@ -37,6 +37,7 @@
            <td colspan="5">Almoço</td>
          {% elseif {{linha.horario}} == "17:30" %}
            <td colspan="5">Jantar</td>
+         {% else %}
             {% for aula in linha.aulas %}
               <td>{{aula.disciplina}} <br/> {{aula.professor}}</td> 
             {% endfor %}
