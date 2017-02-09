@@ -11,8 +11,6 @@ div {
   padding: 16px 32px;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: box-shadow 1s ease;
-  transition: box-shadow 1s ease;
   margin: auto;
   width: 50%;
   padding: 10px;
@@ -33,6 +31,7 @@ td {
     padding: 15px;
     background-color:#CCFF99;
     text-align: center;
+    border-style: double
 }
 
 li, h4, h5, a{
