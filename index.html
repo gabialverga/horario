@@ -33,7 +33,7 @@
          <td>{{linha.horario}}</td>
          {% if {{linha.horario}} == "9:30" %}
            <td colspan="5">Intervalo</td>
-         {% if {{linha.horario}} == "12:20" %}
+         {% elseif {{linha.horario}} == "12:20" %}
            <td colspan="5">Almoço</td>
          {% else %}
             {% for aula in linha.aulas %}
