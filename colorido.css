@@ -45,10 +45,7 @@ li, h4, h5, a{
 }
 
 body {
-  background: -webkit-linear-gradient(#00b300,#ccffcc); 
-  background: -o-linear-gradient(#00b300,#ccffcc);
-  background: -moz-linear-gradient(#00b300,#ccffcc);
-  background: linear-gradient(#00b300,#ccffcc);
+  background: #00b300;
 }
 
 
