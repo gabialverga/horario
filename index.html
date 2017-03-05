@@ -3,7 +3,7 @@
 <link rel="shortcut icon" href="ifpb.ico" >
 <link type="text/css" rel="stylesheet" href="colorido.css"/>
 <title>Horário - Guarabira</title>
-<div> 
+<div class="divCab">
   <img src = "ifpb-1.png">
   <p> - </p> 
   <a>HORÁRIOS LETIVOS DO CAMPUS GUARABIRA </a> 
@@ -22,43 +22,46 @@
  </ul>
  </nav>
 
+
 {% for prof in site.data.professores.professores %}
-  <h1>{{prof}}</h1>
-  {% for curso in site.data.horarios.cursos %}
-    <h1> {{curso.nome}}</h1>
-    {% for turma in curso.turmas %}
-      <h2> <a id={{turma.nome | remove: " "}}>{{turma.nome}}  </a></h2>
-         <table>
-         <tr>
-        {% for coluna in turma.colunas %}
-              <th>{{coluna}}</th>   
-        {% endfor %}
-         </tr>
-
-        {% for linha in turma.linhas %}
+  <div class="divP" id="{{prof}}" styte="visibility:hidden">
+    <h1>{{prof}}</h1>
+    {% for curso in site.data.horarios.cursos %}
+      <h1> {{curso.nome}}</h1>
+      {% for turma in curso.turmas %}
+        <h2> <a id={{turma.nome | remove: " "}}>{{turma.nome}}  </a></h2>
+           <table>
            <tr>
-           <td>{{linha.horario}}</td>
-           {% if {{linha.horario}} == "9:30" or {{linha.horario}} == "14:40" or {{linha.horario}} =="20:30" %}
-             <td colspan="5">Intervalo</td>
-           {% elsif {{linha.horario}} == "12:20" %}
-             <td colspan="5">Almoço</td>
-           {% elsif {{linha.horario}} == "17:30" %}
-             <td colspan="5">Jantar</td>
-           {% else %}
-              {% for aula in linha.aulas %}
-                {% if aula.professor == prof or prof == "Todos" %}
-                  <td>{{aula.disciplina}} <br/> {{aula.professor}}</td> 
-                {% else %}
-                  <td> <br/> </td>
-                {% endif %}
-              {% endfor %}
-           {% endif %}
+          {% for coluna in turma.colunas %}
+                <th>{{coluna}}</th>   
+          {% endfor %}
            </tr>
-        {% endfor %}
 
-         </table>
+          {% for linha in turma.linhas %}
+             <tr>
+             <td>{{linha.horario}}</td>
+             {% if {{linha.horario}} == "9:30" or {{linha.horario}} == "14:40" or {{linha.horario}} =="20:30" %}
+               <td colspan="5">Intervalo</td>
+             {% elsif {{linha.horario}} == "12:20" %}
+               <td colspan="5">Almoço</td>
+             {% elsif {{linha.horario}} == "17:30" %}
+               <td colspan="5">Jantar</td>
+             {% else %}
+                {% for aula in linha.aulas %}
+                  {% if aula.professor == prof or prof == "Todos" %}
+                    <td>{{aula.disciplina}} <br/> {{aula.professor}}</td> 
+                  {% else %}
+                    <td> <br/> </td>
+                  {% endif %}
+                {% endfor %}
+             {% endif %}
+             </tr>
+          {% endfor %}
+
+           </table>
+      {% endfor %}
     {% endfor %}
-  {% endfor %}
+    </div>
 {% endfor %}
 
 
