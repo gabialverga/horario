@@ -24,7 +24,6 @@
       }
     }
     document.getElementById(professor).style.display= "block";
-    document.getElementById("nav").style.display= "block";
   }
 </script>
 
@@ -42,7 +41,7 @@
 
 
 {% for prof in site.data.professores.professores %}
-  <div class="divP" id="{{prof}}" style="display: none">
+  <div class="divP" id="{{prof}}">
     <h1>{{prof}}</h1>
     <nav id ="nav" style="display: none">
      <ul>
