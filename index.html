@@ -38,23 +38,25 @@
   </div>
 </div>
 
-<nav id ="nav" style="display: none">
- <ul>
-  {% for curso in site.data.horarios.cursos %}
-   <li>{{curso.nome}} </li>
-     <ul>
-    {% for turma in curso.turmas %}
-     <li> <a href=#{{turma.nome | remove: " "}}>{{turma.nome}}</a></li>
-    {% endfor %}
-       </ul>
-  {% endfor %}
- </ul>
- </nav>
+
 
 
 {% for prof in site.data.professores.professores %}
   <div class="divP" id="{{prof}}" style="display: none">
     <h1>{{prof}}</h1>
+    <nav id ="nav" style="display: none">
+     <ul>
+      {% for curso in site.data.horarios.cursos %}
+       <li>{{curso.nome}} </li>
+         <ul>
+        {% for turma in curso.turmas %}
+         <li> <a href=#{{turma.nome | remove: " "}}>{{turma.nome}}</a></li>
+        {% endfor %}
+           </ul>
+      {% endfor %}
+     </ul>
+    </nav>
+    
     {% for curso in site.data.horarios.cursos %}
       <h1> {{curso.nome}}</h1>
       {% for turma in curso.turmas %}
