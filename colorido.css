@@ -46,7 +46,10 @@ li, h4, h5, a{
 }
 
 body {
-  background-color: #C1FFC1;
+  background: -webkit-linear-gradient(#00b300,#ccffcc); 
+  background: -o-linear-gradient(#00b300,#ccffcc);
+  background: -moz-linear-gradient(#00b300,#ccffcc);
+  background: linear-gradient(#00b300,#ccffcc);
 }
 
 
@@ -68,7 +71,7 @@ body {
 /* aqui*/
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #00b300;
     color: white;
     padding: 16px;
     font-size: 16px;
