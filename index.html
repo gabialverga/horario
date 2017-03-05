@@ -19,11 +19,11 @@
     var i, davez;
     for(i = 0; i<classes.length; i++){
       davez = classes[i];
-      if(davez.style.visibility == "visible"){
-        document.getElementById(davez.id).style.visibility = "hidden";
+      if(davez.style.display != "none"){
+        document.getElementById(davez.id).style.display = "none";
       }
     }
-    document.getElementById(professor).style.visibility = "visible";
+    document.getElementById(professor).style.display= "block";
   }
 </script>
 
@@ -52,7 +52,7 @@
 
 
 {% for prof in site.data.professores.professores %}
-  <div class="divP" id="{{prof}}" style="visibility: hidden">
+  <div class="divP" id="{{prof}}" style="display: none">
     <h1>{{prof}}</h1>
     {% for curso in site.data.horarios.cursos %}
       <h1> {{curso.nome}}</h1>
