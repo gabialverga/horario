@@ -23,6 +23,7 @@
  </nav>
 
 {% for prof in site.data.professores.professores %}
+  <h1>{{prof}}</h1>
   {% for curso in site.data.horarios.cursos %}
     <h1> {{curso.nome}}</h1>
     {% for turma in curso.turmas %}
@@ -45,7 +46,11 @@
              <td colspan="5">Jantar</td>
            {% else %}
               {% for aula in linha.aulas %}
-                <td>{{aula.disciplina}} <br/> {{aula.professor}}</td> 
+                {% if aula.professor == prof or prof == "Todos" %}
+                  <td>{{aula.disciplina}} <br/> {{aula.professor}}</td> 
+                {% else %}
+                  <td> <br/> </td>
+                {% endif %}
               {% endfor %}
            {% endif %}
            </tr>
