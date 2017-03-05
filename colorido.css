@@ -7,10 +7,10 @@ img{
 }
 
 .divCab {
-  background: -webkit-linear-gradient(#00b300, #ccffcc); 
-  background: -o-linear-gradient(#00b300, #ccffcc);
-  background: -moz-linear-gradient(#00b300, #ccffcc);
-  background: linear-gradient(#00b300, #ccffcc);
+  background: -webkit-linear-gradient(#ccffcc,#00b300); 
+  background: -o-linear-gradient(#ccffcc,#00b300);
+  background: -moz-linear-gradient(#ccffcc,#00b300);
+  background: linear-gradient(#ccffcc,#00b300);
   font-size: 18px;
   letter-spacing: 1px;
   text-decoration: none;
