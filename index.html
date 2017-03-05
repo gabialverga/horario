@@ -24,6 +24,7 @@
       }
     }
     document.getElementById(professor).style.display= "block";
+    document.getElementById("nav").style.display= "block";
   }
 </script>
 
@@ -37,7 +38,7 @@
   </div>
 </div>
 
-<nav>
+<nav id ="nav" style.display="none">
  <ul>
   {% for curso in site.data.horarios.cursos %}
    <li>{{curso.nome}} </li>
