@@ -1,7 +1,7 @@
 *{
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-div {
+.divCab {
   background: linear-gradient(45deg, rgba(255,184,115,0.65) 0%,rgba(255,124,189,0.65) 50%,rgba(108,0,153,0.65) 100%);
   border-radius: 2px;
   font-size: 18px;
