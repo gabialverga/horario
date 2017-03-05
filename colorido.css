@@ -78,7 +78,7 @@ body {
     border: none;
     cursor: pointer;
     text-align: center;
-    max-width: 100%;
+    width: 100%;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -97,7 +97,7 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
-    max-width: 100%;
+    width: 100%;
 }
 
 .dropdown-content {
