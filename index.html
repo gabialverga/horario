@@ -28,7 +28,7 @@
 <button onclick="myFunction()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
     <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-    {% for pr in site.data.professor.professores %}
+    {% for pr in site.data.professores.professores %}
       <p onclick="aparece('{{pr}}')"> {{pr}} </p>
     {% endfor %}
   </div>
