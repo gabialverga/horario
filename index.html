@@ -22,35 +22,37 @@
  </ul>
  </nav>
 
-{% for curso in site.data.horarios.cursos %}
-  <h1> {{curso.nome}}</h1>
-  {% for turma in curso.turmas %}
-    <h2> <a id={{turma.nome | remove: " "}}>{{turma.nome}}  </a></h2>
-       <table>
-       <tr>
-      {% for coluna in turma.colunas %}
-            <th>{{coluna}}</th>   
-      {% endfor %}
-       </tr>
-       
-      {% for linha in turma.linhas %}
+{% for prof in site.data.professores.professores %}
+  {% for curso in site.data.horarios.cursos %}
+    <h1> {{curso.nome}}</h1>
+    {% for turma in curso.turmas %}
+      <h2> <a id={{turma.nome | remove: " "}}>{{turma.nome}}  </a></h2>
+         <table>
          <tr>
-         <td>{{linha.horario}}</td>
-         {% if {{linha.horario}} == "9:30" or {{linha.horario}} == "14:40" or {{linha.horario}} =="20:30" %}
-           <td colspan="5">Intervalo</td>
-         {% elsif {{linha.horario}} == "12:20" %}
-           <td colspan="5">Almoço</td>
-         {% elsif {{linha.horario}} == "17:30" %}
-           <td colspan="5">Jantar</td>
-         {% else %}
-            {% for aula in linha.aulas %}
-              <td>{{aula.disciplina}} <br/> {{aula.professor}}</td> 
-            {% endfor %}
-         {% endif %}
+        {% for coluna in turma.colunas %}
+              <th>{{coluna}}</th>   
+        {% endfor %}
          </tr>
-      {% endfor %}
-       
-       </table>
+
+        {% for linha in turma.linhas %}
+           <tr>
+           <td>{{linha.horario}}</td>
+           {% if {{linha.horario}} == "9:30" or {{linha.horario}} == "14:40" or {{linha.horario}} =="20:30" %}
+             <td colspan="5">Intervalo</td>
+           {% elsif {{linha.horario}} == "12:20" %}
+             <td colspan="5">Almoço</td>
+           {% elsif {{linha.horario}} == "17:30" %}
+             <td colspan="5">Jantar</td>
+           {% else %}
+              {% for aula in linha.aulas %}
+                <td>{{aula.disciplina}} <br/> {{aula.professor}}</td> 
+              {% endfor %}
+           {% endif %}
+           </tr>
+        {% endfor %}
+
+         </table>
+    {% endfor %}
   {% endfor %}
 {% endfor %}
 
