@@ -11,6 +11,11 @@ table {
   margin-left:auto; 
 }
 
+.lado {
+    float: left; 
+    width:25%;
+}
+
 .divCab {
   background: -webkit-linear-gradient(#0cc042,#ccffcc); 
   background: -o-linear-gradient(#0cc042,#ccffcc);
