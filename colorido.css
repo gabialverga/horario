@@ -68,9 +68,9 @@ body {
 
 .dropbtn {
     background-color: #00b300;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+    color: black;
+    padding: 18px;
+    font-size: 18px;
     border: none;
     cursor: pointer;
     text-align: center;
