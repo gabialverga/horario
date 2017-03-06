@@ -87,7 +87,10 @@ body {
 
 /* aqui*/
 .dropbtn {
-    background:#0cc042; 
+    background: -webkit-linear-gradient(#ccffcc,#0cc042); 
+    background: -o-linear-gradient(#ccffcc,#0cc042);
+    background: -moz-linear-gradient(#ccffcc,#0cc042);
+    background: linear-gradient(#ccffcc,#0cc042);
     color: black;
     padding: 24px;
     font-size: 24px;
@@ -98,7 +101,7 @@ body {
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    background-color: #ccffcc;
 }
 #myInput {
     border-box: box-sizing;
@@ -111,7 +114,10 @@ body {
 }
 
 .dropdown {
-    background:#0cc042; 
+    background: -webkit-linear-gradient(#ccffcc,#0cc042); 
+    background: -o-linear-gradient(#ccffcc,#0cc042);
+    background: -moz-linear-gradient(#ccffcc,#0cc042);
+    background: linear-gradient(#ccffcc,#0cc042); 
     position: relative;
     display: inline-block;
     width: 100%;
