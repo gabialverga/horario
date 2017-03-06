@@ -44,6 +44,7 @@ td {
 li, h4, h5, a{
   color: black; 
   text-align:center;
+  text-decoration: none;
 }
 
 body {
