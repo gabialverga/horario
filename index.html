@@ -6,14 +6,8 @@
   <script src="Js/script.js"></script>
   <title>Horário - Guarabira</title>
 </head>
-  
-<div class="divCab">
-  <img src = "ifpb-1.png">
-  <p> - </p> 
-  <a>HORÁRIOS LETIVOS DO CAMPUS GUARABIRA </a> 
-</div>
 
-<script>
+  <script>
   function aparece(professor){
     var classes = document.getElementsByClassName("divP");
     var i, davez;
@@ -35,6 +29,12 @@
       <p onclick="aparece('{{pr}}')"> {{pr}} </p>
     {% endfor %}
   </div>
+</div>
+
+<div class="divCab">
+  <img src = "ifpb-1.png">
+  <p> - </p> 
+  <a>HORÁRIOS LETIVOS DO CAMPUS GUARABIRA </a> 
 </div>
 
 {% for prof in site.data.professores.professores %}
