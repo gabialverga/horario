@@ -42,10 +42,12 @@
     <h1>{{prof}}</h1>
     <nav>
       {% for curso in site.data.horarios.cursos %}
+      <div class = "lado">
         <p class="nomeCurso">{{curso.nome}} </p>
         {% for turma in curso.turmas %}
          <p class="nomeTurma"> <a href=#{{turma.nome | remove: " "}}{{prof}}>{{turma.nome}}</a></p>
         {% endfor %}
+      </div>
       {% endfor %}
     </nav>
     {% for curso in site.data.horarios.cursos %}
