@@ -138,8 +138,8 @@ body {
     z-index: 1;
     text-align: center;
     width: 17%;
-    margin-right:50%; 
-    margin-left:50%;
+    margin-right:auto; 
+    margin-left:auto;
 }
 
 .dropdown-content p {
