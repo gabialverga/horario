@@ -24,6 +24,7 @@ a{
 }
 h3, h2, h1{
   font-style: bold;
+  text-align:center;
 }
 th {
     background-color: #32CD32;
@@ -41,7 +42,8 @@ td {
 }
 
 li, h4, h5, a{
-  color: #227451; 
+  color: black; 
+  text-align:center;
 }
 
 body {
