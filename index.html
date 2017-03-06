@@ -41,12 +41,20 @@
   <div class="divP" id="{{prof}}" style="display:none">
     <h1>{{prof}}</h1>
     <nav>
+      <tr>
       {% for curso in site.data.horarios.cursos %}
-       <p class="nomeCurso">{{curso.nome}} </p>
+       <th> class="nomeCurso">{{curso.nome}} </th>
+      {% endfor %}
+      </tr>
+      <tr>
+      {% for curso in site.data.horarios.cursos %}
+        <td>
         {% for turma in curso.turmas %}
          <p class="nomeTurma"> <a href=#{{turma.nome | remove: " "}}{{prof}}>{{turma.nome}}</a></p>
         {% endfor %}
+        <td>
       {% endfor %}
+      </tr>
     </nav>
     {% for curso in site.data.horarios.cursos %}
       <h1> {{curso.nome}}</h1>
