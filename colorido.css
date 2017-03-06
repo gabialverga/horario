@@ -94,7 +94,7 @@ body {
 .dropdown {  /* ok */
     position: relative;
     display: inline-block;
-    width: 50%;
+    width: 100px;
 }
 .dropdown-content {
     display: none;
