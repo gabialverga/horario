@@ -89,12 +89,12 @@ body {
     border: none;
     cursor: pointer;
     text-align: center;
-    min-width: 100%;
+    min-width: 50%;
 }
 .dropdown {  /* ok */
     position: relative;
     display: inline-block;
-    width: 100%;
+    width: 50%;
 }
 .dropdown-content {
     display: none;
