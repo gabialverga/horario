@@ -7,10 +7,10 @@ img{
 }
 
 .divCab {
-  background: -webkit-linear-gradient(#ccffcc,#00b300); 
-  background: -o-linear-gradient(#ccffcc,#00b300);
-  background: -moz-linear-gradient(#ccffcc,#00b300);
-  background: linear-gradient(#ccffcc,#00b300);
+  background: -webkit-linear-gradient(#ccffcc,#0cc042); 
+  background: -o-linear-gradient(#ccffcc,#0cc042);
+  background: -moz-linear-gradient(#ccffcc,#0cc042);
+  background: linear-gradient(#ccffcc,#0cc042);
   font-size: 18px;
   text-decoration: none;
   left:50%;
@@ -47,7 +47,7 @@ li, h4, h5, a{
 }
 
 body {
-  background: #00b300;
+  background: #0cc042;
 }
 
 
