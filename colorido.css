@@ -102,6 +102,10 @@ body {
     width: 100%;
 }
 .dropdown {  /* ok */
+    background: -webkit-linear-gradient(#0cc042,#ccffcc); 
+    background: -o-linear-gradient(#0cc042,#ccffcc); 
+    background: -moz-linear-gradient(#0cc042,#ccffcc); 
+    background: linear-gradient(#0cc042,#ccffcc);
     position: relative;
     display: inline-block;
     width: 100%;
