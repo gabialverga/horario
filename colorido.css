@@ -86,6 +86,7 @@ body {
     font-size: 16px;
     padding: 14px 20px 12px 45px;
     border: none;
+    width: 30%;
 }
 .dropbtn { /* ok */
     background: -webkit-linear-gradient(#0cc042,#ccffcc); 
@@ -98,12 +99,12 @@ body {
     border: none;
     cursor: pointer;
     text-align: center;
-    min-width: 100%;
+    width: 100%;
 }
 .dropdown {  /* ok */
     position: relative;
     display: inline-block;
-    width: 100px;
+    width: 30%;
 }
 .dropdown-content {
     display: none;
