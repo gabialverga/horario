@@ -27,9 +27,9 @@
   }
 </script>
 
-<div class="dropdown">
+<div class="dropdown" style="float:left;">
 <button onclick="myFunction()" class="dropbtn">Horários</button>
-  <div id="myDropdown" class="dropdown-content">
+  <div id="myDropdown" class="dropdown-content" style="left:0;">
     <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
     {% for pr in site.data.professores.professores %}
       <p onclick="aparece('{{pr}}')"> {{pr}} </p>
