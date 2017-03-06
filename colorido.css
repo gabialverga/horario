@@ -12,14 +12,14 @@ table {
 }
 
 .divCab {
-  background: -webkit-linear-gradient(#ccffcc,#0cc042); 
-  background: -o-linear-gradient(#ccffcc,#0cc042);
-  background: -moz-linear-gradient(#ccffcc,#0cc042);
-  background: linear-gradient(#ccffcc,#0cc042);
+  background: -webkit-linear-gradient(#0cc042,#ccffcc); 
+  background: -o-linear-gradient(#0cc042,#ccffcc);
+  background: -moz-linear-gradient(#0cc042,#ccffcc);
+  background: linear-gradient(#0cc042,#ccffcc);
   font-size: 18px;
   text-decoration: none;
   left:50%;
-  height: 680px;
+  height: 100%;
   text-align:center;
   max-width: 100%;
   border: none;
@@ -87,10 +87,7 @@ body {
 
 /* aqui*/
 .dropbtn {
-    background: -webkit-linear-gradient(#0cc042,#ccffcc); 
-    background: -o-linear-gradient(#0cc042,#ccffcc); 
-    background: -moz-linear-gradient(#0cc042,#ccffcc); 
-    background: linear-gradient(#0cc042,#ccffcc); 
+    background:#0cc042; 
     color: black;
     padding: 24px;
     font-size: 24px;
@@ -114,10 +111,7 @@ body {
 }
 
 .dropdown {
-    background: -webkit-linear-gradient(#0cc042,#ccffcc); 
-    background: -o-linear-gradient(#0cc042,#ccffcc); 
-    background: -moz-linear-gradient(#0cc042,#ccffcc); 
-    background: linear-gradient(#0cc042,#ccffcc); 
+    background:#0cc042; 
     position: relative;
     display: inline-block;
     width: 100%;
