@@ -99,6 +99,7 @@ body {
     border: none;
     cursor: pointer;
     text-align: center;
+    width: 100%;
 }
 .dropdown {  /* ok */
     position: relative;
