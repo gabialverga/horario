@@ -89,7 +89,7 @@ body {
     border: none;
     cursor: pointer;
     text-align: center;
-    min-width: 50%;
+    min-width: 100%;
 }
 .dropdown {  /* ok */
     position: relative;
