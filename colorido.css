@@ -86,7 +86,7 @@ body {
     font-size: 16px;
     padding: 14px 20px 12px 45px;
     border: none;
-    width: 30%;
+    width: 100%;
 }
 .dropbtn { /* ok */
     background: -webkit-linear-gradient(#0cc042,#ccffcc); 
@@ -134,7 +134,10 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+.show {display:block;}
+.dropbtn:hover, .dropbtn:focus {
+     background-color: #3e8e41;
+ }
