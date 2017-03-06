@@ -6,6 +6,11 @@ img{
   margin-top:5%;
 }
 
+table {
+  margin-left: 20%;
+  max-width: 140em;
+}
+
 .divCab {
   background: -webkit-linear-gradient(#ccffcc,#0cc042); 
   background: -o-linear-gradient(#ccffcc,#0cc042);
