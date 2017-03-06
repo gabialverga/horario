@@ -87,12 +87,12 @@ body {
 
 /* aqui*/
 .dropbtn {
-    background: -webkit-linear-gradient(#ccffcc,#0cc042); 
-    background: -o-linear-gradient(#ccffcc,#0cc042);
-    background: -moz-linear-gradient(#ccffcc,#0cc042);
-    background: linear-gradient(#ccffcc,#0cc042);
+    background: -webkit-linear-gradient(#ccffcc,#23C853); 
+    background: -o-linear-gradient(#ccffcc,#23C853);
+    background: -moz-linear-gradient(#ccffcc,#23C853);
+    background: linear-gradient(#ccffcc,#23C853);
     color: black;
-    padding: 24px;
+    padding: 20px;
     font-size: 24px;
     border: none;
     cursor: pointer;
